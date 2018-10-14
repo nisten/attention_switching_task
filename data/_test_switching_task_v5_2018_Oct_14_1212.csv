@@ -1,0 +1,6 @@
+Direction,nthRun,Colour,SwitchTrial,Trial,Congruent,serialPosition,Location,File,PositionX,PositionY,Block,CorrAns,endSwitchPractice.thisRepN,endSwitchPractice.thisTrialN,endSwitchPractice.thisN,endSwitchPractice.thisIndex,repeat_switch_practice.thisRepN,repeat_switch_practice.thisTrialN,repeat_switch_practice.thisN,repeat_switch_practice.thisIndex,key_resp_7.keys,key_resp_7.rt,key_resp_8.keys,key_resp_8.rt,key_resp_5.keys,key_resp_5.rt,response_switch.keys,response_switch.corr,response_switch.rt,participant,session,date,expName,frameRate,
+,,,,,,,,,,,,,,,,,,,,,space,0.8532950303033431,,,,,,,,,001,2018_Oct_14_1212,test_switching_task_v5,60.276350628597505,
+,,,,,,,,,,,,,,,,,,,,,,,space,0.1678826666666282,,,,,,,001,2018_Oct_14_1212,test_switching_task_v5,60.276350628597505,
+,,,,,,,,,,,,,,,,,,,,,,,,,space,2.7836160000006203,,,,,001,2018_Oct_14_1212,test_switching_task_v5,60.276350628597505,
+Left,0,orange,buffer,buffer,1,0,Left,orange_arrow_L.png,-0.33,0,1,n,0,0,0,0,0,0,0,0,,,,,,,m,0,1.2341095757574294,,001,2018_Oct_14_1212,test_switching_task_v5,60.276350628597505,
+,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,001,2018_Oct_14_1212,test_switching_task_v5,60.276350628597505,
