@@ -100,6 +100,7 @@ var instruct_switch_practiceClock;
 var text_11;
 var ready_practiceClock;
 var text_7;
+var number_correct;
 var ISIClock;
 var text;
 var switch_trialClock;
@@ -167,7 +168,7 @@ function experimentInit() {
     depth : 0.0 
   });
   
-  
+  number_correct = 0;
   // Initialize components for Routine "ISI"
   ISIClock = new util.Clock();
   text = new visual.TextStim({
@@ -371,7 +372,7 @@ function instruct_switch1RoutineEachFrame() {
   }
   
   // *key_resp_7* updates
-  if (t >= 3 && key_resp_7.status === PsychoJS.Status.NOT_STARTED) {
+  if (t >= 0 && key_resp_7.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
     key_resp_7.tStart = t;  // (not accounting for frame time here)
     key_resp_7.frameNStart = frameN;  // exact frame index
@@ -481,7 +482,7 @@ function instruct_switch2RoutineEachFrame() {
   }
   
   // *key_resp_8* updates
-  if (t >= 3 && key_resp_8.status === PsychoJS.Status.NOT_STARTED) {
+  if (t >= 0 && key_resp_8.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
     key_resp_8.tStart = t;  // (not accounting for frame time here)
     key_resp_8.frameNStart = frameN;  // exact frame index
@@ -591,7 +592,7 @@ function instruct_switch_practiceRoutineEachFrame() {
   }
   
   // *key_resp_5* updates
-  if (t >= 2.0 && key_resp_5.status === PsychoJS.Status.NOT_STARTED) {
+  if (t >= 0 && key_resp_5.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
     key_resp_5.tStart = t;  // (not accounting for frame time here)
     key_resp_5.frameNStart = frameN;  // exact frame index
@@ -780,7 +781,6 @@ function switch1_trialLoopEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var number_correct;
 var ready_practiceComponents;
 function ready_practiceRoutineBegin() {
   //------Prepare to start Routine 'ready_practice'-------
@@ -946,6 +946,11 @@ function switch_trialRoutineBegin() {
   image_2.setPos([PositionX, PositionY]);
   image_2.setImage(File);
   response_switch = new core.BuilderKeyResponse(psychoJS);
+  console.log(PositionX);
+  console.log(File);
+  console.log(number_correct);
+  console.log(repeat_switch_practice);
+  console.log(repeat_switch_practice.thisN);
   if (repeat_switch_practice.thisN == 0) {
       number_correct = 0;
   }
@@ -1294,7 +1299,7 @@ function do_your_bestRoutineEachFrame() {
   }
   
   // *key_resp_9* updates
-  if (t >= 2 && key_resp_9.status === PsychoJS.Status.NOT_STARTED) {
+  if (t >= 0 && key_resp_9.status === PsychoJS.Status.NOT_STARTED) {
     // keep track of start time/frame for later
     key_resp_9.tStart = t;  // (not accounting for frame time here)
     key_resp_9.frameNStart = frameN;  // exact frame index
