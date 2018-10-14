@@ -109,7 +109,7 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="text" updates="constant" val="Now you will see either a BLUE or an ORANGE arrow.&amp;#10;&amp;#10;If you see a BLUE arrow, press the left or right key &amp;#10;based on the LOCATION of the arrow.&amp;#10;&amp;#10;Press &quot;N&quot;  if the BLUE arrow is on the left.&amp;#10;Press &quot;M&quot; if the BLUE arrow is on the right.&amp;#10;&amp;#10;If you see an ORANGE arrow, press the left or right key&amp;#10;based on the direction it is pointing.&amp;#10;&amp;#10;Press &quot;N&quot; if the ORANGE arrow points left.&amp;#10;Press &quot;M&quot; if the ORANGE arrow points right.&amp;#10;&amp;#10;Press the space key to continue" valType="str"/>
+        <Param name="text" updates="constant" val="Now you will see either a BLUE or an ORANGE arrow.&amp;#10;&amp;#10;If you see a BLUE arrow, press the left or right key &amp;#10;based on the LOCATION of the arrow.&amp;#10;&amp;#10;Press &quot;N&quot;  if the BLUE arrow is on the left.&amp;#10;Press &quot;M&quot; if the BLUE arrow is on the right.&amp;#10;&amp;#10;If you see an ORANGE arrow, press the left or right key&amp;#10;based on the direction it is pointing.&amp;#10;&amp;#10;Press &quot;N&quot; if the ORANGE arrow points left.&amp;#10;Press &quot;M&quot; if the ORANGE arrow points right.&amp;#10;&amp;#10;Press the space key to continue." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="1.75" valType="code"/>
       </TextComponent>

@@ -118,7 +118,7 @@ function experimentInit() {
   text_3 = new visual.TextStim({
     win : psychoJS.window,
     name : 'text_3',
-    text : 'Now you will see either a BLUE or an ORANGE arrow.\n\nIf you see a BLUE arrow, press the left or right key \nbased on the LOCATION of the arrow.\n\nPress "N"  if the BLUE arrow is on the left.\nPress "M" if the BLUE arrow is on the right.\n\nIf you see an ORANGE arrow, press the left or right key\nbased on the direction it is pointing.\n\nPress "N" if the ORANGE arrow points left.\nPress "M" if the ORANGE arrow points right.\n\nPress the space key to continue',
+    text : 'Now you will see either a BLUE or an ORANGE arrow.\n\nIf you see a BLUE arrow, press the left or right key \nbased on the LOCATION of the arrow.\n\nPress "N"  if the BLUE arrow is on the left.\nPress "M" if the BLUE arrow is on the right.\n\nIf you see an ORANGE arrow, press the left or right key\nbased on the direction it is pointing.\n\nPress "N" if the ORANGE arrow points left.\nPress "M" if the ORANGE arrow points right.\n\nPress the space key to continue.',
     font : 'Arial',
     pos : [0, 0], height : 0.1,  wrapWidth : 1.75, ori: 0,
     color : new util.Color('black'),  opacity : 1,
