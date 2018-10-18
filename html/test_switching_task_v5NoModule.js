@@ -94,13 +94,13 @@ var text_11;
 var ready_practiceClock;
 var text_7;
 var number_correct;
+var msg;
 var ISIClock;
 var text;
 var switch_trialClock;
 var fixation3;
 var image_2;
 var switch_feedbackClock;
-var msg;
 var text_12;
 var MorePractice3Clock;
 var text_16;
@@ -118,7 +118,7 @@ function experimentInit() {
   text_3 = new visual.TextStim({
     win : psychoJS.window,
     name : 'text_3',
-    text : 'Now you will see either a BLUE or an ORANGE arrow.\n\nIf you see a BLUE arrow, press the left or right key \nbased on the LOCATION of the arrow.\n\nPress "N"  if the BLUE arrow is on the left.\nPress "M" if the BLUE arrow is on the right.\n\nIf you see an ORANGE arrow, press the left or right key\nbased on the direction it is pointing.\n\nPress "N" if the ORANGE arrow points left.\nPress "M" if the ORANGE arrow points right.\n\nPress the space key to continue.',
+    text : 'In this test, you will see either a BLUE or an ORANGE arrow.\n\nIf you see a BLUE arrow, press the left or right key \nbased on the LOCATION of the arrow.\n\nPress "N"  if the BLUE arrow is on the left.\nPress "M" if the BLUE arrow is on the right.\n\nIf you see an ORANGE arrow, press the left or right key\nbased on the direction it is pointing.\n\nPress "N" if the ORANGE arrow points left.\nPress "M" if the ORANGE arrow points right.\n\nPress the space key to continue.',
     font : 'Arial',
     pos : [0, 0], height : 0.1,  wrapWidth : 1.75, ori: 0,
     color : new util.Color('black'),  opacity : 1,
@@ -162,6 +162,7 @@ function experimentInit() {
   });
   
   number_correct = 0;
+  msg = ' ';
   // Initialize components for Routine "ISI"
   ISIClock = new util.Clock();
   text = new visual.TextStim({
@@ -661,7 +662,7 @@ function endSwitchPracticeLoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   endSwitchPractice = new TrialHandler({
     psychoJS,
-    nReps: 1, method: TrialHandler.Method.RANDOM,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
     extraInfo: expInfo, originPath: undefined,
     trialList: undefined,
     seed: undefined, name: 'endSwitchPractice'});
