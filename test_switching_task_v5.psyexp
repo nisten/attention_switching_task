@@ -22,8 +22,8 @@
     <Param name="Use version" updates="None" val="" valType="str"/>
     <Param name="Window size (pixels)" updates="None" val="[1463, 823]" valType="code"/>
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
-    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
-    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="color" updates="None" val="#D6F6F6" valType="str"/>
+    <Param name="colorSpace" updates="None" val="hex" valType="str"/>
     <Param name="expName" updates="None" val="test_switching_task_v5" valType="str"/>
     <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
     <Param name="logging level" updates="None" val="exp" valType="code"/>

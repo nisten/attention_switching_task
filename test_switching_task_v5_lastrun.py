@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b10),
-    on October 14, 2018, at 12:12
+    on Mon Nov 12 12:02:56 2018
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -40,7 +40,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\danie\\Dropbox\\Kris\\Projects\\attention_switching_demo\\test_switching_task_v5_lastrun.py',
+    originPath='/Users/jag/work/nisten/attention_switching_demo/test_switching_task_v5_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -55,7 +55,7 @@ endExpNow = False  # flag for 'escape' or other condition => quit the exp
 win = visual.Window(
     size=[1463, 823], fullscr=True, screen=0,
     allowGUI=False, allowStencil=False,
-    monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
+    monitor='testMonitor', color='#D6F6F6', colorSpace='hex',
     blendMode='avg', useFBO=True)
 # store frame rate of monitor if we can measure it
 expInfo['frameRate'] = win.getActualFrameRate()
@@ -67,7 +67,7 @@ else:
 # Initialize components for Routine "instruct_switch1"
 instruct_switch1Clock = core.Clock()
 text_3 = visual.TextStim(win=win, name='text_3',
-    text='Now you will see either a BLUE or an ORANGE arrow.\n\nIf you see a BLUE arrow, press the left or right key \nbased on the LOCATION of the arrow.\n\nPress "N"  if the BLUE arrow is on the left.\nPress "M" if the BLUE arrow is on the right.\n\nIf you see an ORANGE arrow, press the left or right key\nbased on the direction it is pointing.\n\nPress "N" if the ORANGE arrow points left.\nPress "M" if the ORANGE arrow points right.\n\nPress the space key to continue',
+    text='In this test, you will see either a BLUE or an ORANGE arrow. \n\nIf you see a BLUE arrow, press the left or right key \nbased on the LOCATION of the arrow.\n\nPress "N"  if the BLUE arrow is on the left.\nPress "M" if the BLUE arrow is on the right.\n\nIf you see an ORANGE arrow, press the left or right key\nbased on the direction it is pointing.\n\nPress "N" if the ORANGE arrow points left.\nPress "M" if the ORANGE arrow points right.\n\nPress the space key to continue.',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=1.75, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
@@ -103,7 +103,8 @@ text_7 = visual.TextStim(win=win, name='text_7',
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-
+number_correct = 0
+msg = ' '
 
 # Initialize components for Routine "ISI"
 ISIClock = core.Clock()
@@ -266,7 +267,7 @@ while continueRoutine:
         text_3.setAutoDraw(True)
     
     # *key_resp_7* updates
-    if t >= 3 and key_resp_7.status == NOT_STARTED:
+    if t >= 0 and key_resp_7.status == NOT_STARTED:
         # keep track of start time/frame for later
         key_resp_7.tStart = t
         key_resp_7.frameNStart = frameN  # exact frame index
@@ -345,7 +346,7 @@ while continueRoutine:
         text_5.setAutoDraw(True)
     
     # *key_resp_8* updates
-    if t >= 3 and key_resp_8.status == NOT_STARTED:
+    if t >= 0 and key_resp_8.status == NOT_STARTED:
         # keep track of start time/frame for later
         key_resp_8.tStart = t
         key_resp_8.frameNStart = frameN  # exact frame index
@@ -424,7 +425,7 @@ while continueRoutine:
         text_11.setAutoDraw(True)
     
     # *key_resp_5* updates
-    if t >= 2.0 and key_resp_5.status == NOT_STARTED:
+    if t >= 0 and key_resp_5.status == NOT_STARTED:
         # keep track of start time/frame for later
         key_resp_5.tStart = t
         key_resp_5.frameNStart = frameN  # exact frame index
@@ -476,7 +477,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-endSwitchPractice = data.TrialHandler(nReps=1, method='random', 
+endSwitchPractice = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='endSwitchPractice')
@@ -944,7 +945,7 @@ while continueRoutine:
         text_4.setAutoDraw(True)
     
     # *key_resp_9* updates
-    if t >= 2 and key_resp_9.status == NOT_STARTED:
+    if t >= 0 and key_resp_9.status == NOT_STARTED:
         # keep track of start time/frame for later
         key_resp_9.tStart = t
         key_resp_9.frameNStart = frameN  # exact frame index
