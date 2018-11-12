@@ -17,7 +17,7 @@ var psychoJS = new PsychoJS({
 // open window:
 psychoJS.openWindow({
   fullscr: true,
-  color: new util.Color([0, 0, 0]),
+  color: new util.Color('#D6F6F6'),
   units: 'use prefs'
 });
 
