@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b10),
-    on Mon Nov 12 12:02:56 2018
+    on Mon Nov 12 12:21:57 2018
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -55,7 +55,7 @@ endExpNow = False  # flag for 'escape' or other condition => quit the exp
 win = visual.Window(
     size=[1463, 823], fullscr=True, screen=0,
     allowGUI=False, allowStencil=False,
-    monitor='testMonitor', color='#D6F6F6', colorSpace='hex',
+    monitor='testMonitor', color='#E8F7F7', colorSpace='hex',
     blendMode='avg', useFBO=True)
 # store frame rate of monitor if we can measure it
 expInfo['frameRate'] = win.getActualFrameRate()
